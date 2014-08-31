@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'carrierwave'
 gem 'carrierwave-dropbox'
+gem 'kaminari'
 
 gem 'rails_admin'
 
