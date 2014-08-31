@@ -1,0 +1,7 @@
+development:
+  app_key: js6j93x09o6769k
+  app_secret: y7x2lh6gfj3a823
+  acess_token: kUhgxXQjC1YAAAAAAAAAC7Ur9100Ir8Z40gA_jHKseTSf
+  acess_token_secret: 
+  user_id:
+production:

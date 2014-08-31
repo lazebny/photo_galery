@@ -1,0 +1,118 @@
+ru:
+  admin:
+    home:
+      name: "MeбельТорг"
+    table_headers:
+      company: "Компании, подавшие заявку"
+      created_at: "Заявка подана"
+      model_name: "Название модели"
+      last_used: "Использовалась"
+      records: "Записи"
+    misc:
+      log_out: "Выйти"
+      ago: "назад"
+      search: "Поиск"
+      filter: "Запрос"
+      refresh: "Обновить"
+      add_filter: "Добавить фильтр"
+      navigation: "Навигация"
+    flash:
+      successful: "%{name} успешно %{action}"
+      error: "%{name} не может быть %{action}"
+      noaction: "Операция не выполнена"
+      model_not_found: "Модель '%{model}' не найдена"
+      object_not_found: "%{model} с id '%{id}' не найдена"
+      company_accepted: "Вы подтвердили заявку компании %{name}."
+    actions:
+      dashboard:
+        title: "Панель управления"
+        menu: "Панель управления"
+        breadcrumb: "Панель управления"
+      accept_company:
+        menu: "Подтвердить заявку"
+      index:
+        title: "%{model_label_plural}"
+        menu: "Список"
+        breadcrumb: "%{model_label_plural}"
+      show:
+        title: "%{model_label} '%{object_label}'"
+        menu: "Показать"
+        breadcrumb: "%{object_label}"
+      show_in_app:
+        menu: "Показать в приложении"
+      confirm_user:
+        menu: "Подтвердить регистрацию"
+      new:
+        title: "Создать %{model_label}"
+        menu: "Добавить"
+        breadcrumb: "Создать"
+        link: "Добавить %{model_label}"
+        done: "завершено"
+      edit:
+        title: " Редактировать %{model_label} '%{object_label}'"
+        menu: "Редактировать"
+        breadcrumb: "Редактировать"
+        link: "Редактировать this %{model_label}"
+        done: "завершено"
+      delete:
+        title: "Удалить %{model_label} '%{object_label}'"
+        menu: "Удалить"
+        breadcrumb: "Удалено"
+        link: "Удалить '%{object_label}'"
+        done: "завершено"
+      bulk_delete:
+        title: "Удалить %{model_label_plural}"
+        menu: "Множественное удаление"
+        breadcrumb: "Множественное удаление"
+        bulk_link: "Удалить выбранных %{model_label_plural}"
+      export:
+        title: "Экспорт %{model_label_plural}"
+        menu: "Экспортировать"
+        breadcrumb: "Экспортировать"
+        link: "Экспортировать найденных %{model_label_plural}"
+        bulk_link: "Экспортировать выбранных %{model_label_plural}"
+        done: "завершено"
+      history_index:
+        title: "История для %{model_label_plural}"
+        menu: "История"
+        breadcrumb: "История"
+      history_show:
+        title: "История для %{model_label} '%{object_label}'"
+        menu: "История"
+        breadcrumb: "История"
+    form:
+      cancel: "Отменить"
+      basic_info: "Основная информация"
+      required: "обязательное"
+      optional: "опциональное"
+      one_char: "символ"
+      char_length_up_to: "длина должна быть больше"
+      char_length_of: "длина"
+      save: "Сохранить"
+      save_and_add_another: "Сохранить и добавить еще"
+      save_and_edit: "Сохранить и редактировать"
+      all_of_the_following_related_items_will_be_deleted: "? Следующие объекты зависят друг от друга и будут удалены:"
+      are_you_sure_you_want_to_delete_the_object: "Вы уверенны, что хотети удалить %{model_name}"
+      confirmation: "Да"
+      bulk_delete: "Следующие объекты будут удалены"
+      new_model: "%{name} (new)"
+    export:
+      confirmation: "Экспортировать в %{name}"
+      select: "Выберите поля для экспорта"
+      select_all_fields: "Выбрать все поля"
+      fields_from: "FПоля для %{name}"
+      fields_from_associated: "Поля, связанные с %{name}"
+      display: "Показать %{name}: %{type}"
+      options_for: "Опции для %{name}"
+      empty_value_for_associated_objects: "<empty>"
+      click_to_reverse_selection: 'Для снятия выделения необходимо кликнуть'
+      csv:
+        header_for_root_methods: "%{name}" # 'model' is available
+        header_for_association_methods: "%{name} [%{association}]"
+        encoding_to: "Перекодировать в"
+        encoding_to_help: "Choose output encoding. Leave empty to let current input encoding untouched: (%{name})"
+        skip_header: "No header"
+        skip_header_help: "Do not output a header (no fields description)"
+        default_col_sep: ","
+        col_sep: "Column separator"
+        col_sep_help: "Leave blank for default ('%{value}')" # value is default_col_sep
