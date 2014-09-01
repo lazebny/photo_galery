@@ -1,4 +1,13 @@
 <div class="header">
-  <div id="logo"></div>
+  <div class="header_wrapper">
+    <div id="logo" class="float-left"></div>
+    <div class="menu_wrapper">
+    <ul class="top_menu">
+      <li><%= link_to 'Home', '/' %></li>
+      <li><%= link_to 'Portfolio', galery_path('all') %></li>
+      <li>About</li>
+    </ul>
+    </div>
+  </div>
 </div>
 <div id="top"></div>
