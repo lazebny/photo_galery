@@ -8,10 +8,9 @@
   = csrf_meta_tags
 
 %body
-  .header
-  #top
+  = render 'layouts/header'
   .main
     .wrapper
-      .blog-header
+      
 
       = yield

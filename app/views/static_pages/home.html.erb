@@ -1,63 +1,37 @@
-    <div class="blog-content">
-      <div class="blog-content-left float-left">
-        <div class="blog-content-left-i margin-bottom-30">
-          <h1 class="blog-content-left-i-title padding-bottom-20">Каханне ёсць!</h1>
-          <div class="blog-content-left-i-description padding-bottom-20">Август 25, 2014</div>
-          <div class="line padding-bottom-30"></div>
-          <div class="photo margin-bottom-30"></div>
-          <div class="text margin-bottom-30">
-
-
-            Жыцце, без веры ў каханне<br>
-            Шчаслівым не захоча быць,<br>
-            Бо сэрцу доўгае чаканне<br>
-            Не зможа шчасце засланіць.<br>
-            <br>
-            Апошнія сабраўшы сілы,<br>
-            Душа захоча з небыцця<br>
-            Ляцець ў цудоуную краіну:<br>
-            Краіну казак і жыцця...<br>
-            <br>
-            Каханне ёсць, у каханні сіла,<br>
-            Яно з табой на ўсё жыццё,<br>
-            Жыццё каханне нарадзіла,<br>
-            І толькі смерць мацней яго!
-      </div>
-      <div class="line padding-bottom-30"></div>
-      <a class="blog-content-left-i-more">Просмотреть коллекцию</a>
-      <div class="clear"></div>
-            </div>
+<div class='blog-header'></div>
+<div class="blog-content">
+  <div class="blog-content-left float-left">
+    <%= render partial: 'posts/post', collection: @posts, as: 'post' %> 
   </div>
   <div class="blog-content-right">
 
-    <div class="blog-content-right-i-portfolio margin-bottom-30"></div>
-    <div class="blog-content-right-i-category margin-bottom-30">
-      <%= render 'galeries/ul', galeries: @galeries %>
-    </div>
-
-    <div class="blog-content-right-i-instagramm margin-bottom-30">
-      <div class="instagramm_small_photo float-left"></div>
-      <div class="instagramm_nick float-left margin-left-10">magni_ficat</div>
-      <div class="instagramm_more float-right">Просмотреть профиль</div>
-      <div class="instagramm_big_photo margin-top-70"></div>
-    </div>
-
-  <div class="blog-content-right-i-collections margin-bottom-30">
-  <h1>Коллекции</h1>
-  <ul class="collection">
-          <li><a href="" rel="external" target="_blank">Беларусь</a></li>
-          <li><a href="" rel="external" target="_blank">Исскуство во имя жизни</a></li>
-          <li><a href="" rel="external" target="_blank">Полуостров/a></li>
-  </ul>
+  <div class="blog-content-right-i-portfolio margin-bottom-30"></div>
+  <div class="blog-content-right-i-category margin-bottom-30">
+    <%= render 'galeries/ul', galeries: @galeries %>
   </div>
 
-  <div class="blog-content-right-i-opens margin-bottom-30">
-  <h1>Открытия</h1>
-      </div>
+  <div class="blog-content-right-i-instagramm margin-bottom-30">
+    <div class="instagramm_small_photo float-left"></div>
+    <div class="instagramm_nick float-left margin-left-10">magni_ficat</div>
+    <div class="instagramm_more float-right">Просмотреть профиль</div>
+    <div class="instagramm_big_photo margin-top-70"></div>
+  </div>
 
-      <div class="blog-content-right-i-quot">
-  <h1>Цитата</h1>
-      </div>
+  <div class="blog-content-right-i-collections margin-bottom-30">
+    <h1>Коллекции</h1>
+    <ul class="collection">
+      <li><a href="" rel="external" target="_blank">Беларусь</a></li>
+      <li><a href="" rel="external" target="_blank">Исскуство во имя жизни</a></li>
+      <li><a href="" rel="external" target="_blank">Полуостров/a></li>
+    </ul>
+  </div>
+  <div class="blog-content-right-i-opens margin-bottom-30">
+    <h1>Открытия</h1>
+  </div>
+
+  <div class="blog-content-right-i-quot">
+     <h1>Цитата</h1>
+  </div>
 
   </div>
   <div class="clear"></div>

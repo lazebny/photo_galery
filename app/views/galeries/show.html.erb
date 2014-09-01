@@ -1,4 +1,7 @@
+<%= render 'galeries/topmenu/ul', galeries: @galeries %>
+
 <%= render partial: 'galeries/image', collection: @images,
   locals: { galery: @galery } %>
-
-<%= paginate @images %>
+<div>
+  <%= paginate @images %>
+</div>

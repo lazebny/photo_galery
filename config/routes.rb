@@ -3,6 +3,7 @@ PhotoGalery::Application.routes.draw do
   root 'static_pages#home'
 
   resources :galeries, only: [:show]
+  resources :posts, only: [:show]
 
   # test
 end

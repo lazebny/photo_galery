@@ -1,0 +1,5 @@
+<div class="title"><%= @post.title %></div>
+<div class="content"><%= @post.content.html_safe %></div>
+<div class="image"><%= image_tag @post.image %></div>
+<div class="created_at"><%= @post.created_at %></div>
+<div class="updated_at"><%= @post.updated_at %></div>

@@ -1,0 +1,16 @@
+<div class="blog-content-left-i margin-bottom-30">
+  <h1 class="blog-content-left-i-title padding-bottom-20"><%= post.title %></h1>
+  <!-- <div class="blog-content-left-i-description padding-bottom-20">Август 25, 2014</div> -->
+  <div class="blog-content-left-i-description padding-bottom-20"><%= post.created_at %></div>
+  <div class="line padding-bottom-30"></div>
+  <!-- <div class="photo margin-bottom-30"></div> -->
+  <div class="post-photo margin-bottom-30">
+    <%= image_tag post.image %>
+  </div>
+  <div class="text margin-bottom-30">
+    <%= post.content.html_safe %>
+  </div>
+  <div class="line padding-bottom-30"></div>
+  <%= link_to 'Просмотреть коллекцию', post, class: 'blog-content-left-i-more' %>
+  <div class="clear"></div>
+</div>
