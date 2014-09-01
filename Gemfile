@@ -13,6 +13,9 @@ gem 'carrierwave-dropbox'
 gem 'kaminari'
 
 gem 'rails_admin'
+gem 'rails-i18n', '~> 4.0.0'
+gem 'russian', '~> 0.6.0'
+gem 'ckeditor'
 
 group :doc do
   gem 'sdoc', require: false
