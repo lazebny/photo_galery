@@ -37,6 +37,7 @@ RailsAdmin.config do |config|
     Galery::Image
     Note
     Post
+    Quote
   )
   
 end
