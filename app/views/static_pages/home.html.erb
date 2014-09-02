@@ -20,12 +20,14 @@
       <div class="instagramm_big_photo margin-top-70"></div>
     </div>
 
-  <div class="blog-content-right-i-collections margin-bottom-30">
-    <%= render 'posts/menu/list', posts: @posts %>
-  </div>
-  
+    <div class="blog-content-right-i-collections margin-bottom-30">
+      <%= render 'posts/menu/list', posts: @posts %>
+    </div>
+    
+    <div class="blog-content-right-i-opens  margin-bottom-30">
       <%= render 'notes/menu/item', note: @note %>
-      
+    </div>  
+
     <div class="blog-content-right-i-quot margin-bottom-30">
       <%= render 'quotes/menu/item', quote: @quote %>
     </div>
