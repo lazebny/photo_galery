@@ -6,6 +6,6 @@
 <%  image_tag note.image %>
 <% end %>
 
-<%  note.content %>
+<%= note.content %>
 <%= I18n.l note.created_at, format: '%B %d, %Y' %>
 <%= I18n.l note.updated_at, format: '%B %d, %Y' %>

@@ -4,6 +4,7 @@
   *{
     margin: 0;
     padding: 0;
+
   }
 
   .float-left{
@@ -16,6 +17,10 @@
 
   .clear{
     clear: both;
+  }
+
+  .clear-right{
+    clear: right;
   }
 
   .padding-bottom-20{
@@ -46,6 +51,10 @@
      margin-top: 20px;
   }
 
+  .margin-20-0{
+     margin: 20px 0;
+  }
+
  //Main
 
   .main {
@@ -65,6 +74,12 @@
     border-top: 1px dashed #ece6e6;
   }
 
+  a {
+    text-decoration: none;
+    color: #000;
+
+  }
+
   li a:hover{
     color: #000;
   }
@@ -76,6 +91,28 @@
     text-transform: uppercase;
     }
 
+ .link-more{
+    text-transform: uppercase;
+    float: right;
+  }
+ 
+ .link-more:after{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    background-image: image-url('arrow2.png');
+    float: right;
+    position: relative;
+    margin-left: 10px;
+  }
+
+  .date{
+     color: #000;
+  font-family: Georgia;
+  font-size: 13px;
+  font-style: italic;
+  }
 
 
 //Header
@@ -137,6 +174,7 @@
   .blog-content-left-i{
     padding: 30px;
     background-color: #ffffff;
+    max-height: 820px;
   }
 
   .blog-content-left-i-title{
@@ -145,22 +183,11 @@
     text-transform: uppercase;
   }
 
-  .blog-content-left-i-description{
-  color: #000;
-  font-family: Georgia;
-  font-size: 13px;
-  font-style: italic;
-  }
-
-  .blog-content-left-i-more{
-    text-transform: uppercase;
-    float: right;
-  }
  
   .photo{
     width: 700px;
     height: 450px;
-    background-image: image-url('1.jpg');
+    // background-image: image-url('1.jpg');
   }
 
   .text{
@@ -168,6 +195,9 @@
   font: 16px/24px Arial, Helvetica, sans-serif;
   }
 
+.post-photo img{
+  max-width: 700px;
+}
 
 //Right block
   .blog-content-right {
@@ -208,10 +238,11 @@
    .category a:after{
     content: '';
     display: inline-block;
-    width: 46px;
-    height: 28px;
-    background-image: image-url('10.jpg');
+    width: 16px;
+    height: 20px;
+    background-image: image-url('arrow1.png');
     float: right;
+    position: relative;
   }
 
 .category li{
@@ -230,16 +261,27 @@
   
   .blog-content-right-i-opens{
     padding: 25px;
-    height: 280px;
+    // height: 280px;
     background-color: #fff;
   }
 
   .blog-content-right-i-opens-photo{
-    width: 140px;
-    height: 220px;
+    padding-right: 15px;
   }
 
-  .blog-content-right-i-quot{
+  .blog-content-right-i-opens-photo-i{
+    max-width: 115px;
+  }
+
+  .blog-content-right-i-opens-a{
+    display: block;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+
+   .blog-content-right-i-quot{
     height: 240px;
     background-color: #fff;
     padding: 25px;
@@ -247,6 +289,11 @@
 
   .blog-content-right-i-quot-text{
     height: 190px;
+  }
+
+  .blog-content-right-i-video{
+    background-color: #fff;
+    padding: 25px;
   }
 
   .instagramm_small_photo{

@@ -1,32 +1,41 @@
 <div class='blog-header'></div>
+
 <div class="blog-content">
+  
   <div class="blog-content-left float-left">
     <%= render partial: 'posts/post', collection: @posts, as: 'post' %> 
   </div>
+  
   <div class="blog-content-right">
+    <div class="blog-content-right-i-portfolio margin-bottom-30"></div>
+    <div class="blog-content-right-i-category margin-bottom-30">
+      <%= render 'galeries/ul', galeries: @galeries %>
+    </div>
 
-  <div class="blog-content-right-i-portfolio margin-bottom-30"></div>
-  <div class="blog-content-right-i-category margin-bottom-30">
-    <%= render 'galeries/ul', galeries: @galeries %>
-  </div>
+    <div class="blog-content-right-i-instagramm margin-bottom-30">
+      <div class="instagramm_small_photo float-left"></div>
+      <div class="instagramm_nick float-left margin-left-10">magni_ficat</div>
+      <div class="instagramm_more float-right">Просмотреть профиль</div>
+      <div class="instagramm_big_photo margin-top-70"></div>
+    </div>
 
-  <div class="blog-content-right-i-instagramm margin-bottom-30">
-    <div class="instagramm_small_photo float-left"></div>
-    <div class="instagramm_nick float-left margin-left-10">magni_ficat</div>
-    <div class="instagramm_more float-right">Просмотреть профиль</div>
-    <div class="instagramm_big_photo margin-top-70"></div>
-  </div>
-
-  <div class="blog-content-right-i-collections margin-bottom-30">
-    <%= render 'posts/menu/list', posts: @menu_posts %>
-  </div>
-  <div class="blog-content-right-i-opens margin-bottom-30">
+    <div class="blog-content-right-i-collections margin-bottom-30">
+      <%= render 'posts/menu/list', posts: @menu_posts %>
+    </div>
+    
     <%= render 'notes/menu/item', note: @note %>
-  </div>
+    
+    <div class="blog-content-right-i-quot margin-bottom-30">
+       <h2>Цитата дня</h2>
+       <div class="blog-content-right-i-quot-text"> 
+        Как астроном один заметил верно: «нам не до звёзд во время фейерверка!» 
+       </div>
+    </div>
 
-  <div class="blog-content-right-i-quot">
-     <h2>Цитата дня</h2>
-     <div class="blog-content-right-i-quot-text"> Как астроном один заметил верно: «нам не до звёзд во время фейерверка!» </div>
+  <div class="blog-content-right-i-video margin-bottom-30">
+    <div class="textwidget">
+      <iframe width="350" height="250" src="//www.youtube.com/embed/moPqrpMFdAU" frameborder="0" allowfullscreen></iframe>
+    </div>
   </div>
 
   </div>

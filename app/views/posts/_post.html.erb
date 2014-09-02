@@ -1,8 +1,7 @@
 <div class="blog-content-left-i margin-bottom-30">
   <h1 class="blog-content-left-i-title padding-bottom-20"><%= post.title %></h1>
-  <div class="blog-content-left-i-description padding-bottom-20"><%= I18n.l post.created_at, format: '%B %d, %Y' %></div>
+  <div class="date padding-bottom-20"><%= I18n.l post.created_at, format: '%d %B, %Y' %></div>
   <div class="line padding-bottom-30"></div>
-  <!-- <div class="photo margin-bottom-30"></div> -->
   <div class="post-photo margin-bottom-30">
     <%= image_tag post.image %>
   </div>
@@ -10,6 +9,6 @@
     <%= post.content.html_safe %>
   </div>
   <div class="line padding-bottom-30"></div>
-  <%= link_to 'Просмотреть коллекцию', post, class: 'blog-content-left-i-more' %>
+  <%= link_to 'Просмотреть коллекцию', post, class: 'link-more' %>
   <div class="clear"></div>
 </div>

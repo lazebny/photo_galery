@@ -1,15 +1,23 @@
-<h2>Последние открытия</h2>
-<div class="blog-content-right-i-opens-photo margin-top-20"> 
-  <%= link_to note.link do %>
-  <% note.title %>
-  <% end %>
+<div class="blog-content-right-i-opens  margin-bottom-30">
+  <h2 class="padding-bottom-20">Последние открытия</h2>
+  <div class="date">
+   <%= I18n.l note.created_at, format: '%d %B, %Y' %>
+  </div>
+  <div class="line margin-20-0 "></div>
+  <div class="blog-content-right-i-opens-photo float-left"> 
+    <%= link_to note.link do %>
+    <%  image_tag note.image, class: 'blog-content-right-i-opens-photo-i' %>
+    <% end %>
+  </div>
+    <%= link_to  note.title, note.link, class: 'blog-content-right-i-opens-a' %>
+    
+    <p>
+      <%= note.content %>
+    </p>
+    <div class="line margin-20-0 "></div>
 
-  <%= link_to note.link do %>
-  <%  image_tag note.image %>
-  <% end %>
-  <%= note.content %>
-  <%= I18n.l note.created_at, format: '%B %d, %Y' %>
-  <%= I18n.l note.updated_at, format: '%B %d, %Y' %>
+    
+    <%= link_to 'Все открытия', notes_path, class: 'link-more' %>
+    <div class="clear-right"></div>
+    
 </div>
-
-<%= link_to 'Все открытия', notes_path %>
