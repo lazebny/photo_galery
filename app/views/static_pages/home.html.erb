@@ -2,6 +2,7 @@
 <div class="blog-content">
   <div class="blog-content-left float-left">
     <%= render partial: 'posts/post', collection: @posts, as: 'post' %> 
+    <%= paginate @posts %>
   </div>
   <div class="blog-content-right">
 
@@ -18,7 +19,7 @@
   </div>
 
   <div class="blog-content-right-i-collections margin-bottom-30">
-    <%= render 'posts/menu/list', posts: @menu_posts %>
+    <%= render 'posts/menu/list', posts: @posts %>
   </div>
   <div class="blog-content-right-i-opens margin-bottom-30">
     <%= render 'notes/menu/item', note: @note %>
