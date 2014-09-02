@@ -274,7 +274,8 @@
 
 //Category galery
 
-.top_menu_category{
+.top_menu_category li{
   list-style-type: none;
-      
+  display: inline;  
+  margin-right: 10px; 
 }

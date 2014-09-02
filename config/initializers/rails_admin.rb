@@ -35,6 +35,7 @@ RailsAdmin.config do |config|
   config.included_models = %w(
     Galery
     Galery::Image
+    Note
     Post
   )
   

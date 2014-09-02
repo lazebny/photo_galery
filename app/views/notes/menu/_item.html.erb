@@ -1,0 +1,15 @@
+<h2>Последние открытия</h2>
+<div class="blog-content-right-i-opens-photo margin-top-20"> 
+  <%= link_to note.link do %>
+  <% note.title %>
+  <% end %>
+
+  <%= link_to note.link do %>
+  <%  image_tag note.image %>
+  <% end %>
+  <%= note.content %>
+  <%= I18n.l note.created_at, format: '%B %d, %Y' %>
+  <%= I18n.l note.updated_at, format: '%B %d, %Y' %>
+</div>
+
+<%= link_to 'Все открытия', notes_path %>

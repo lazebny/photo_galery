@@ -1,0 +1,11 @@
+<%= link_to note.link do %>
+<% note.title %>
+<% end %>
+
+<%= link_to note.link do %>
+<%  image_tag note.image %>
+<% end %>
+
+<%  note.content %>
+<%= I18n.l note.created_at, format: '%B %d, %Y' %>
+<%= I18n.l note.updated_at, format: '%B %d, %Y' %>

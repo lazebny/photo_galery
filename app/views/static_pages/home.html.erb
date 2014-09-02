@@ -18,13 +18,10 @@
   </div>
 
   <div class="blog-content-right-i-collections margin-bottom-30">
-    <%= render 'posts/menu/list', posts: @posts %>
+    <%= render 'posts/menu/list', posts: @menu_posts %>
   </div>
   <div class="blog-content-right-i-opens margin-bottom-30">
-    <h2>Последние открытия</h2>
-    <div class="blog-content-right-i-opens-photo margin-top-20"> 
-      <%= image_tag '325.jpg' %>
-    </div>
+    <%= render 'notes/menu/item', note: @note %>
   </div>
 
   <div class="blog-content-right-i-quot">

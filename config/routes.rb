@@ -5,6 +5,7 @@ PhotoGalery::Application.routes.draw do
 
   resources :galeries, only: [:show]
   resources :posts, only: [:show]
+  resources :notes, only: [:index]
 
   # test
 end
