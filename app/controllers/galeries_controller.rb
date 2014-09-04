@@ -15,6 +15,7 @@ class GaleriesController < ApplicationController
       end
     @images = @images.order(updated_at: :desc).page(params[:page]).per(10)
     @galeries = Galery.all
+    @show_galery = true
   end
 
   private

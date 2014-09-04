@@ -1,11 +1,24 @@
-<%= link_to note.link do %>
-<% note.title %>
-<% end %>
+<div class="blog-content-left-i margin-bottom-30">
+  <div class="blog-content-left-i-title padding-bottom-20 title">
+    <%= link_to note.link do %>
+    <% note.title %>
+    <% end %>
+  </div>
 
-<%= link_to note.link do %>
-<%  image_tag note.image %>
-<% end %>
+  <div class="line padding-bottom-30"></div>
 
-<%= note.content %>
-<%= I18n.l note.created_at, format: '%B %d, %Y' %>
-<%= I18n.l note.updated_at, format: '%B %d, %Y' %>
+  <div class="image post-photo margin-right-20 float-left">
+    <%= link_to note.link do %>
+    <%  image_tag note.image %>
+    <% end %>
+  </div>
+
+  <div class="content  text">
+    <%= note.content %>
+    <%= I18n.l note.created_at, format: '%B %d, %Y' %>
+    <%= I18n.l note.updated_at, format: '%B %d, %Y' %> 
+  </div>
+
+  <div class="clear"></div>
+
+</div>

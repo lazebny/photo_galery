@@ -1,13 +1,18 @@
 <div class="wrapper">
-  <div class="title"><%= @post.title %></div>
-  <div class="content"><%= @post.content.html_safe %></div>
-  <div class="image"><%= image_tag @post.image %></div>
-  <div class="created_at"><%= I18n.l @post.created_at, format: '%B %d, %Y' %></div>
-  <div class="updated_at"><%= I18n.l @post.updated_at, format: '%B %d, %Y' %></div>
+  <div class="blog-content-left float-left">
+    <div class="blog-content-left-i">
+      <div class="blog-content-left-i-title padding-bottom-20 title"><%= @post.title %></div>
+      <div class="created_at date padding-bottom-20"><%= I18n.l @post.created_at, format: '%d %B, %Y' %></div>
+      <div class="line padding-bottom-30"></div>
+      <div class="image post-photo margin-bottom-30"><%= image_tag @post.image %></div>
+      <div class="content text margin-bottom-30"><%= @post.content.html_safe %></div>
+    </div>
+  </div>
 
-</div>
 <%= render 'layouts/right_block',
   galeries: @galeries,
   posts: @posts,
   note: @note,
-  quote: @quote %>
+  quote: @quote %> 
+
+</div>

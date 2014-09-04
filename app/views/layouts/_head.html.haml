@@ -2,5 +2,7 @@
   %title PhotoGalery
   %meta{ 'http-equiv' => "content-type",  content: "text/html; charset=utf-8" }
   = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
-  -#= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  = javascript_include_tag "application"
+  = javascript_include_tag "gamma_galery" if @show_galery
+  -#= javascript_include_tag "application", "data-turbolinks-track" => true
   = csrf_meta_tags

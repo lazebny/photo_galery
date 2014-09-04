@@ -1,13 +1,13 @@
-
-<div class="top_menu_wrapper">
+<div class="top_menu_wrapper ">
   <%= render 'galeries/topmenu/ul', galeries: @galeries %>
 </div>
 
-<div class="gallery_wrapper">
+<div class="gallery_wrapper margin-45-20">
   <%= render partial: 'galeries/image', collection: @images,
   locals: { galery: @galery } %>
+  <% #= render 'galeries/galery', images: @images, galery: @galery %>
 </div>
 
-<div class="margin-left-30">
+<div class="galary_pagination  margin-left-20">
   <%= paginate @images %>
 </div>

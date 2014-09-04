@@ -1,3 +1,11 @@
-<%= render partial: 'notes/note', collection: @notes %>
+<div class="wrapper">
+  <div class="blog-content-left float-left"> 
+  <%= render partial: 'notes/note', collection: @notes %>
+  </div>
 
-<%= paginate @notes %>
+  <%= paginate @notes %> 
+
+  <div class="clear"></div>
+  
+</div>
+
