@@ -6,6 +6,11 @@
   <%= paginate @notes %> 
 
   <div class="clear"></div>
-  
+
+  <%= render 'layouts/right_block',
+        galeries: @galeries,
+        posts: @menu_posts,
+        note: @note,
+        quote: @quote %>
 </div>
 
