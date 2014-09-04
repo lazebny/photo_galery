@@ -1,6 +1,6 @@
 class NotesController < ApplicationController
   def index
-    @notes = Note.order(updated_at: :desc).page(params[:page]).per(10)
+    @notes = Note.order(updated_at: :desc).page(params[:page]).per(5)
 
     @posts = Post.order(updated_at: :desc).page(params[:page]).per(3)
     @menu_posts = Post.order(updated_at: :desc).first(3)

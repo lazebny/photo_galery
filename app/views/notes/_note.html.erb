@@ -13,12 +13,17 @@
     <% end %>
   </div>
 
-  <div class="content  text">
+  <div class="content text">
     <%= note.content %>
     <%= I18n.l note.created_at, format: '%B %d, %Y' %>
     <%= I18n.l note.updated_at, format: '%B %d, %Y' %> 
   </div>
 
-  <div class="clear"></div>
+  <div class="clear margin-bottom-30"></div>
+  <div class="line padding-bottom-30"></div>
+  <%= link_to 'Посмотреть подробно', note.link, class: 'link-more', target: '_blank' %>
+
+  <!-- <div class="clear"></div> -->
 
 </div>
+ 

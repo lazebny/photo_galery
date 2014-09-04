@@ -13,7 +13,7 @@ class GaleriesController < ApplicationController
       else
         @galery.images
       end
-    @images = @images.order(updated_at: :desc).page(params[:page]).per(10)
+    @images = @images.order(updated_at: :desc).page(params[:page]).per(50)
     @galeries = Galery.all
     @show_galery = true
   end

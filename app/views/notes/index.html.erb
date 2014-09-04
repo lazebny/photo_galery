@@ -1,16 +1,18 @@
 <div class="wrapper">
   <div class="blog-content-left float-left"> 
   <%= render partial: 'notes/note', collection: @notes %>
-  </div>
-
-  <%= paginate @notes %> 
-
   <div class="clear"></div>
+  </div>
 
   <%= render 'layouts/right_block',
         galeries: @galeries,
         posts: @menu_posts,
         note: @note,
         quote: @quote %>
+
+  <div class="clear"></div>
+
+  <%= paginate @notes %> 
+
 </div>
 

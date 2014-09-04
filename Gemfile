@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'carrierwave'
 gem 'carrierwave-dropbox'
+gem 'mini_magick'
 gem 'kaminari'
 
 gem 'rails_admin'
