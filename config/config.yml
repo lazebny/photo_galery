@@ -1,7 +1,24 @@
 development:
-  app_key: js6j93x09o6769k
-  app_secret: y7x2lh6gfj3a823
-  acess_token: kUhgxXQjC1YAAAAAAAAAC7Ur9100Ir8Z40gA_jHKseTSf
-  acess_token_secret: 
-  user_id:
+  # app_key: js6j93x09o6769k
+  # app_secret: y7x2lh6gfj3a823
+  # acess_token: kUhgxXQjC1YAAAAAAAAAC7Ur9100Ir8Z40gA_jHKseTSf
+  # acess_token_secret:
+  # user_id:
+  dropbox:
+    email: 'lazebny@mail.ua'
+    app_key: '06dyemuo5sl8c5p'
+    app_secret: 'a4ntukbxf06y8u7'
+    access_token: 'qo1zrvkqzdfwbxrc'
+    access_token_secret: 'c8w8fzvchjbuwqm'
+    user_id: '256132326'
+    access_type: 'app_folder'
+
 production:
+  dropbox:
+    email: 'vika030718@gmail.com'
+    app_key: 'js6j93x09o6769k'
+    app_secret: 'y7x2lh6gfj3a823'
+    access_token: 'zj6wmum3e2ta44eg'
+    access_token_secret: '2pr6ur665i7aw3m'
+    user_id: '209740072'
+    access_type: 'app_folder'

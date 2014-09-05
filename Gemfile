@@ -12,6 +12,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 1.2'
 gem 'carrierwave'
 gem 'carrierwave-dropbox'
+# gem 'carrierwave-google_drive'
 gem 'mini_magick'
 gem 'kaminari'
 
