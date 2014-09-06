@@ -1,4 +1,4 @@
-//= require GammaGallery/modernizr.custom.70736
+// require GammaGallery/modernizr.custom.70736
 //= require GammaGallery/jquery.masonry.min
 //= require GammaGallery/jquery.history
 //= require GammaGallery/js-url.min

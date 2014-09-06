@@ -20,7 +20,7 @@ class GalleryImageUploader < PhotoGallery::BaseUploader
   # end
 
   # Process files as they are uploaded:
-  # process :scale => [200, 300]
+  # process :scale => [800, 600]
   #
   # def scale(width, height)
   #   # do something
@@ -29,33 +29,33 @@ class GalleryImageUploader < PhotoGallery::BaseUploader
   # Create different versions of your uploaded files:
   # version :thumb do
   #   process :resize_to_fit => [50, 50]
-  # end  
+  # end
   version :xsmall do
-    process :resize_to_fit => [100, 100]
-  end 
+    process :resize_to_limit => [100, 100]
+  end
 
   version :small do
-    process :resize_to_fit => [140, 140]
+    process :resize_to_limit => [140, 140]
   end
-  
+
   version :medium do
-    process :resize_to_fit => [200, 200]
+    process :resize_to_limit => [200, 200]
   end
-  
+
   version :large do
-    process :resize_to_fit => [300, 300]
+    process :resize_to_limit => [300, 300]
   end
 
   version :xlarge do
-    process :resize_to_fit => [700, 700]
-  end  
+    process :resize_to_limit => [700, 700]
+  end
 
   version :xxlarge do
-    process :resize_to_fit => [1000, 1000]
+    process :resize_to_limit => [1000, 1000]
   end
-  
+
   version :xxxlarge do
-    process :resize_to_fit => [1800, 1800]
+    process :resize_to_limit => [1800, 1800]
   end
 
   # Add a white list of extensions which are allowed to be uploaded.
