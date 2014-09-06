@@ -1,8 +1,10 @@
-class Quote < ActiveRecord::Base
-  class << self 
+class Quote < PhotoGallery::Base
+  include Adminable::Quote
+
+  class << self
     def day_qoute
       quote = Rails.cache.fetch day_qoute_cache_key
-      unless quote 
+      unless quote
         quote = Quote.all.sample
         cache_quote quote
       end
@@ -11,13 +13,13 @@ class Quote < ActiveRecord::Base
     end
 
     def day_qoute_cache_key
-      'Quote.day_qoute' 
+      'Quote.day_qoute'
     end
 
     def cache_quote(quote)
-      Rails.cache.write( 
-        day_qoute_cache_key, 
-        quote, 
+      Rails.cache.write(
+        day_qoute_cache_key,
+        quote,
         day_qoute_expires
       )
     end

@@ -1,0 +1,8 @@
+<ul class="top_menu_category">
+
+  <li>
+    <%= link_to 'ALL', gallery_path('all'), rel: 'external', target: '_blank', class: 'top_menu_a' %>
+  </li>
+
+  <%= render partial: 'galleries/topmenu/li', collection: galleries, as: :gallery %>
+</ul> 
