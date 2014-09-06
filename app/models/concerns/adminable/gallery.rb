@@ -1,9 +1,8 @@
-module Adminable::Galery::Image
+module Adminable::Gallery
   extend ActiveSupport::Concern
 
   included do
     rails_admin do
-      parent 'Galery'
     end
   end
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140902172634) do
+ActiveRecord::Schema.define(version: 20140906073216) do
 
   create_table "ckeditor_assets", force: true do |t|
     t.string   "data_file_name",               null: false
@@ -29,15 +29,15 @@ ActiveRecord::Schema.define(version: 20140902172634) do
   add_index "ckeditor_assets", ["assetable_type", "assetable_id"], name: "idx_ckeditor_assetable"
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type"
 
-  create_table "galeries", force: true do |t|
+  create_table "galleries", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "galery_images", force: true do |t|
+  create_table "gallery_images", force: true do |t|
     t.string   "src"
-    t.integer  "galery_id"
+    t.integer  "gallery_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

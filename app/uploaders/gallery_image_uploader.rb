@@ -1,5 +1,5 @@
 # encoding: utf-8
-class GaleryImageUploader < PhotoGallery::BaseUploader
+class GalleryImageUploader < PhotoGallery::BaseUploader
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick

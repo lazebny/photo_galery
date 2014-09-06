@@ -27,6 +27,19 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development, :test do
+  gem 'pry'
+  gem 'pry-debugger'
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-macro'
+  gem 'better_errors'
+  gem 'meta_request'
+  # gem 'debugger'
+  gem 'fuubar'
+  gem 'awesome_print'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

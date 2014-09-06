@@ -33,8 +33,8 @@ RailsAdmin.config do |config|
   end
 
   config.included_models = %w(
-    Galery
-    Galery::Image
+    Gallery
+    Gallery::Image
     Note
     Post
     Quote

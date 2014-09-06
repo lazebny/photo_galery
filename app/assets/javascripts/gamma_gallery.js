@@ -4,4 +4,4 @@
 //= require GammaGallery/js-url.min
 //= require GammaGallery/jquerypp.custom
 //= require GammaGallery/gamma
-//= require gamma_galery.init
+//= require gamma_gallery.init
