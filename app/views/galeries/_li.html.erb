@@ -1,3 +1,5 @@
 <li>
-  <%= link_to galery.name, galery, rel: 'external', class: 'test' %>
+  <%= link_to galery, rel: 'external', class: 'test' do %>
+    <span><%= galery.name %></span> 
+  <% end %>
 </li>
