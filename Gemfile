@@ -17,6 +17,7 @@ gem 'carrierwave-dropbox'
 # gem 'carrierwave-google_drive'
 gem 'mini_magick'
 gem 'kaminari'
+gem 'truncate_html'
 
 gem 'rails_admin'
 gem 'rails-i18n', '~> 4.0.0'
