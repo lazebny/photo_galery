@@ -6,7 +6,7 @@
     <%= image_tag post.image %>
   </div>
   <div class="text margin-bottom-30">
-    <%= post.content.html_safe %>
+    <%= sanitize(truncate_html(post.content, length: 430), tags: %w(br ul li p)) %>
   </div>
   <div class="line padding-bottom-30"></div>
   <%= link_to 'Показать полностью', post, class: 'link-more' %>

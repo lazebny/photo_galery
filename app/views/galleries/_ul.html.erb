@@ -1,0 +1,8 @@
+<ul class="category">
+
+  <li>
+    <%= link_to 'ALL', gallery_path('all'), rel: 'external' %>
+  </li>
+
+  <%= render partial: 'galleries/li', collection: galleries, as: :gallery %>
+</ul>

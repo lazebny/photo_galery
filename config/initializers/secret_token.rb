@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-PhotoGalery::Application.config.secret_key_base = '225e1f287d6fc7d79cc96b00a54e18c4e1815d20de69cd8687de8c6ccf05b44771c9f30fd187e72fe3c6f451e56b5720be67b417d91ea7cd4b3eb8ebdc952cef'
+PhotoGallery::Application.config.secret_key_base = '225e1f287d6fc7d79cc96b00a54e18c4e1815d20de69cd8687de8c6ccf05b44771c9f30fd187e72fe3c6f451e56b5720be67b417d91ea7cd4b3eb8ebdc952cef'

@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-PhotoGalery::Application.load_tasks
+PhotoGallery::Application.load_tasks

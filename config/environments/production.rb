@@ -1,4 +1,4 @@
-PhotoGalery::Application.configure do
+PhotoGallery::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -43,7 +43,8 @@ PhotoGalery::Application.configure do
   # config.force_ssl = true
 
   # Set to :debug to see everything in the log.
-  config.log_level = :warn
+  # config.log_level = :warn
+  config.log_level = :info
 
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]

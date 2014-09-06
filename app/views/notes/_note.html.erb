@@ -14,7 +14,7 @@
   </div>
 
   <div class="content text">
-    <%= note.content %>
+    <%= note.content.html_safe %>
     <%= I18n.l note.created_at, format: '%B %d, %Y' %>
     <%= I18n.l note.updated_at, format: '%B %d, %Y' %> 
   </div>
