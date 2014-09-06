@@ -3,9 +3,16 @@ module Adminable::Post
 
   included do
     rails_admin do
-      field :title
-      field :content, :ck_editor
-      field :image
+      list do
+        field :title
+        field :created_at
+      end
+
+      edit do
+        field :title
+        field :content, :ck_editor
+        field :image
+      end
     end
   end
 end
