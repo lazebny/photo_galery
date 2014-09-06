@@ -36,8 +36,8 @@ RailsAdmin.config do |config|
     Gallery
     Gallery::Image
     Note
+    PortfolioLogo
     Post
     Quote
   )
-  
 end

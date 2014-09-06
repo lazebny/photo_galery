@@ -7,5 +7,6 @@ class NotesController < ApplicationController
     @quote = Quote.day_qoute
     @galleries = Gallery.includes(:images).all
     @note = Note.last
+    @logo = PortfolioLogo.all.sample
   end
 end
