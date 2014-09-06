@@ -3,9 +3,9 @@
 </div>
 
 <div class="gallery_wrapper margin-45-20">
-  <% #= render partial: 'galleries/image', collection: @images,
-   # locals: { gallery: @gallery } %>
-  <%= render 'galleries/gallery', images: @images, gallery: @gallery %>
+  <%= render partial: 'galleries/image', collection: @images,
+    locals: { gallery: @gallery } %>
+  <% #= render 'galleries/gallery', images: @images, gallery: @gallery %>
 </div>
 
 <div class="galary_pagination  margin-left-20">
