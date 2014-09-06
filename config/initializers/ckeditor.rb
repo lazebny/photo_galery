@@ -1,4 +1,3 @@
-# Use this hook to configure ckeditor
 Ckeditor.setup do |config|
   # ==> ORM configuration
   # Load and configure the ORM. Supports :active_record (default), :mongo_mapper and
@@ -32,8 +31,6 @@ Ckeditor.setup do |config|
   # By default: nil
   # config.asset_path = "http://www.example.com/assets/ckeditor/"
 
-  # To reduce the asset precompilation time, you can limit plugins and/or languages to those you need:
-  # By default: nil (no limit)
-  # config.assets_languages = ['en', 'uk']
-  # config.assets_plugins = ['image', 'smiley']
+  config.assets_languages = ['ru']
+  config.assets_plugins = ['image', 'smiley']
 end

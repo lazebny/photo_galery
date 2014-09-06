@@ -11,7 +11,7 @@
 <%= link_to  note.title, note.link, class: 'blog-content-right-i-opens-a' %>
 
 <p>
-  <%= note.content %>
+  <%= note.content.html_safe %>
 </p>
 <div class="line margin-20-0 "></div>
 

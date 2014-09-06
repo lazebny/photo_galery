@@ -53,7 +53,7 @@ ActiveRecord::Schema.define(version: 20140906073216) do
 
   create_table "posts", force: true do |t|
     t.string   "title"
-    t.string   "content"
+    t.text     "content"
     t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
