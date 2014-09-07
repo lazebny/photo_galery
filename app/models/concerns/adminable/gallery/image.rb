@@ -6,9 +6,12 @@ module Adminable::Gallery::Image
       parent ::Gallery
 
       list do
+        field :id
         field :src
         field :gallery
         field :created_at
+
+        items_per_page 5
       end
     end
   end

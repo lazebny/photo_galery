@@ -7,4 +7,10 @@ PhotoGallery::Application.routes.draw do
   resources :galleries, only: [:show]
   resources :posts, only: [:show]
   resources :notes, only: [:index]
+
+  namespace :api, defaults: { format: 'json' } do
+    resources :galleries, only: [] do
+      resources :images, only: [:show], controller: 'galleries/images'
+    end
+  end
 end

@@ -1,4 +1,11 @@
 //= require jquery
 //= require jquery_ujs
+//= require underscore
+//= require angular
+//= require angular-route
+//= require angular-sanitize
+//= require angular-resource
+//= require angular-rails-templates
+//= require app/main
 // require turbolinks
 // require_tree .
