@@ -1,2 +1,4 @@
-@import 'Galereya/css/jquery.galereya.css';
-@import 'Galereya/css/jquery.galereya.ie.css';
+/*
+*= require Galereya/css/jquery.galereya
+*= require Galereya/css/jquery.galereya.ie
+*/

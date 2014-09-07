@@ -1,11 +1,12 @@
 module.directive('gallery',
-['gallery', 'promiseForCollection',
-  function(gallery, allPromises) {
+['gallery', 'promiseForCollection', 'loader',
+  function(gallery, allPromises, loader) {
     return {
       restrict: 'E',
       replace: true,
       templateUrl: 'app/gallery/templates/show.html',
       link: function (scope, element, attrs, controller) {
+        loader.start()
 
         galleryId = attrs.galleryId || 0
         imageIds = JSON.parse(attrs.imageIds)
@@ -16,6 +17,7 @@ module.directive('gallery',
         // console.log(images)
         allPromises(images).then(
           function() {
+            loader.stop()
             $('#gallery').galereya({
               load: function(next) {
                 formatedImages = gallery.formatImages(images)
