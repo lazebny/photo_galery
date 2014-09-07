@@ -2,12 +2,19 @@
   <%= render 'galleries/topmenu/ul', galleries: @galleries %>
 </div>
 
-<div class="gallery_wrapper margin-45-20">
-  <% #= render partial: 'galleries/image', collection: @images,
-   # locals: { gallery: @gallery } %>
-  <%= render 'galleries/gallery', images: @images, gallery: @gallery %>
-</div>
+
+<gallery
+  gallery-id="<%= @gallery.id %>"
+  image-ids="<%= @image_ids %>" >
+</gallery>
+
+<!-- <div class="gallery_wrapper margin&#45;45&#45;20" ng&#45;controller='GalleryCtrl' > -->
+  <!-- <div ng&#45;include='app/gallery/templates/show.html' images='{{images}}'></div> -->
+  <%#= render partial: 'galleries/image', collection: @images,
+    #locals: { gallery: @gallery } %>
+  <% #= render 'galleries/gallery', images: @images, gallery: @gallery %>
+<!-- </div> -->
 
 <div class="galary_pagination  margin-left-20">
-  <%= paginate @images %>
+  <% #= paginate @images %>
 </div>
