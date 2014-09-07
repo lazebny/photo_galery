@@ -1,5 +1,7 @@
 <div class="blog-content-left-i margin-bottom-30">
-  <h1 class="blog-content-left-i-title padding-bottom-20"><%= post.title %></h1>
+  <h1 class="blog-content-left-i-title padding-bottom-20 title">
+   <%= link_to post.title, post %>
+  </h1>
   <div class="date padding-bottom-20"><%= I18n.l post.created_at, format: '%d %B, %Y' %></div>
   <div class="line padding-bottom-30"></div>
   <div class="post-photo margin-bottom-30">
@@ -12,3 +14,4 @@
   <%= link_to 'Показать полностью', post, class: 'link-more' %>
   <div class="clear"></div>
 </div> 
+ 

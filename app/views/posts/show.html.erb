@@ -1,11 +1,11 @@
-<div class="wrapper">
+<div class="wrapper post">
   <div class="blog-content-left float-left">
     <div class="blog-content-left-i">
       <div class="blog-content-left-i-title padding-bottom-20 title"><%= @post.title %></div>
       <div class="created_at date padding-bottom-20"><%= I18n.l @post.created_at, format: '%d %B, %Y' %></div>
       <div class="line padding-bottom-30"></div>
       <div class="image post-photo margin-bottom-30"><%= image_tag @post.image %></div>
-      <div class="content text margin-bottom-30"><%= @post.content.html_safe %></div>
+      <div class="content text"><%= @post.content.html_safe %></div>
     </div>
   </div>
 
@@ -16,4 +16,7 @@
   logo: @logo,
   quote: @quote %>
 
+  <div class="clear"></div>
+
 </div>
+ 
