@@ -14,7 +14,7 @@ $(function() {
     function() {
       Gamma.init(GammaSettings)
 
-    }, 1000
+    }, 10000
   )
   // Gamma.init(GammaSettings)
   // Gamma.init( GammaSettings, fncallback );
