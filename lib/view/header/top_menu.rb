@@ -4,6 +4,6 @@ class View::Header::TopMenu
   end
 
   def active_class(key)
-    'header-top-menu-active'
+    'header-top-menu-active' if @params[:controller] == key
   end
 end

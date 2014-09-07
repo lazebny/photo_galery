@@ -173,19 +173,19 @@
     }
 
     .pagination .first{
-    width: 50px;
+    width: 84px;
     }
 
     .pagination .prev{
-    width: 78px;
+    width: 118px;
     }
 
     .pagination .last{
-    width: 46px;
+    width: 115px;
     }
 
     .pagination .next{
-    width: 50px;
+    width: 120px;
     }
 
     .pagination .page{
@@ -193,7 +193,7 @@
     }
 
     .pagination .last{
-      margin-right: 0;
+      margin-right: 0px;
     }
 
     .pagination a{
@@ -277,6 +277,10 @@
     font: 13px 'NovecentowideDemiBold';
     letter-spacing: 2px;
     margin-right: 15px;
+    }
+
+    .top_menu li a:hover{
+    color: #868686!important;
     }
 
     .menu_wrapper{
@@ -524,3 +528,11 @@
 .post .blog-content-left-i{
   height: 100%;
 }
+
+//Responsiv
+
+// @media (min-width:760px) {
+//   .blog-content-left{
+//     float: none;
+//   }
+// }
