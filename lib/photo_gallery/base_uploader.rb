@@ -17,12 +17,16 @@ class PhotoGallery::BaseUploader < CarrierWave::Uploader::Base
     ActionController::Base.helpers.asset_path fallback
   end
 
-  if Rails.env.production?
-    storage :dropbox
-  else
-    # storage :google_drive
-    # storage :dropbox
-    storage :file
+  def self.set_storage
+    if Rails.env.production?
+      :dropbox
+    else
+      #:google_drive
+      # :dropbox
+      :file
+    end
+    #:fog
   end
-  # storage :fog
+
+  storage set_storage
 end
