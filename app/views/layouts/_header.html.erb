@@ -3,8 +3,8 @@
     <div id="logo" class="float-left"></div>
     <div class="menu_wrapper">
     <ul class="top_menu">
-      <li><%= link_to 'Home', '/' %></li>
-      <li><%= link_to 'Portfolio', gallery_path('all') %></li>
+      <li><%= link_to 'Home', '/', class: top_menu_view.active_class?('/') %></li>
+      <li><%= link_to 'Portfolio', gallery_path('all'), class: top_menu_view.active_class?('gallery') %></li>
       <li>About</li>
     </ul>
     </div>

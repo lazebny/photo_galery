@@ -3,7 +3,7 @@
 = render 'layouts/head'
 
 %body
-  = render 'layouts/header'
+  = render 'layouts/header', top_menu_view: @header_top_menu_view
   .main
     = yield
 
