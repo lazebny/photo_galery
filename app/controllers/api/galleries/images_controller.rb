@@ -4,6 +4,7 @@ module Api
 
     def show
       @image = ::Gallery::Image.find_by_id params[:id]
+      # exit
       # if @gallery
       # @image
       # = @gallery.images.find_by_id params[:id]
