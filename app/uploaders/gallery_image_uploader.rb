@@ -31,33 +31,41 @@ class GalleryImageUploader < PhotoGallery::BaseUploader
   #   process :resize_to_fit => [50, 50]
   # end
 
-  version :xsmall do
-    process :resize_to_limit => [100, 100]
-  end
-
-  version :small do
-    process :resize_to_limit => [140, 140]
-  end
-
-  version :medium do
-    process :resize_to_limit => [200, 200]
-  end
-
-  version :large do
+  version :middle do
     process :resize_to_limit => [300, 300]
   end
 
-  version :xlarge do
-    process :resize_to_limit => [700, 700]
-  end
+  # version :large do
+  #   process :resize_to_limit => [800, 800]
+  # end
 
-  version :xxlarge do
-    process :resize_to_limit => [1000, 1000]
-  end
-
-  version :xxxlarge do
-    process :resize_to_limit => [1800, 1800]
-  end
+  # version :xsmall do
+  #   process :resize_to_limit => [100, 100]
+  # end
+  #
+  # version :small do
+  #   process :resize_to_limit => [140, 140]
+  # end
+  #
+  # version :medium do
+  #   process :resize_to_limit => [200, 200]
+  # end
+  #
+  # version :large do
+  #   process :resize_to_limit => [300, 300]
+  # end
+  #
+  # version :xlarge do
+  #   process :resize_to_limit => [700, 700]
+  # end
+  #
+  # version :xxlarge do
+  #   process :resize_to_limit => [1000, 1000]
+  # end
+  #
+  # version :xxxlarge do
+  #   process :resize_to_limit => [1800, 1800]
+  # end
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:

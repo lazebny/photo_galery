@@ -218,12 +218,14 @@
         var createCell = function ($img, info) {
             var $cell = $img.addClass('galereya-cell-img')
                 .wrap('<div class="galereya-cell" data-index="' + $cells.length + '"></div>')
-                .parent()
-                .append('<div class="galereya-cell-desc">\
-                                <div class="galereya-cell-desc-title">' + info.title + '</div>\
-                                <div class="galereya-cell-desc-text">' + info.description + '</div>\
-                            </div>')
-                .append('<div class="galereya-cell-overlay" />');
+
+            // if(info.title || info.description) {
+            //   $cell.parent().append('<div class="galereya-cell-desc">\
+            //                   <div class="galereya-cell-desc-title">' + info.title + '</div>\
+            //                   <div class="galereya-cell-desc-text">' + info.description + '</div>\
+            //                 </div>')
+            // }
+            $cell.parent().append('<div class="galereya-cell-overlay" />');
             $cell.click(Handlers.cellClick);
             $cells = $cells.add($cell);
             $grid.append($cell);
@@ -307,10 +309,10 @@
                 $img.addClass('galereya-cell-img')
                     .wrap('<div class="galereya-cell" data-index="' + i + '"></div>')
                     .parent()
-                    .append('<div class="galereya-cell-desc">\
-                                <div class="galereya-cell-desc-title">' + title + '</div>\
-                                <div class="galereya-cell-desc-text">' + desc + '</div>\
-                            </div>')
+                    // .append('<div class="galereya-cell-desc">\
+                    //             <div class="galereya-cell-desc-title">' + title + '</div>\
+                    //             <div class="galereya-cell-desc-text">' + desc + '</div>\
+                    //         </div>')
                     .append('<div class="galereya-cell-overlay" />');
             });
 
