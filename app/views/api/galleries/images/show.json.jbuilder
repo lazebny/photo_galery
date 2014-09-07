@@ -1,4 +1,8 @@
 # json.src @image.src
+json.gallery do
+  json.name @image.gallery_name
+end
+
 json.src do
   json.xsmall @image.src.xsmall.url
   json.small @image.src.small.url

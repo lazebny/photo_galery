@@ -1,20 +1,6 @@
-<li>
-  <!-- <div ng&#45;if='false' -->
-  <div ng-if='image.src'
-    data-alt="img03"
-    data-description="<h3>Sky high</h3>"
-    data-max-width="1800"
-    data-max-height="1350">
-
-    <div data-src="{{image.src.xxxlarge}}" data-min-width="1300"></div>
-    <div data-src="{{image.src.xxlarge}}" data-min-width="1000"></div>
-    <div data-src="{{image.src.xlarge}}" data-min-width="700"></div>
-    <div data-src="{{image.src.large}}" data-min-width="300"></div>
-    <div data-src="{{image.src.medium}}" data-min-width="200"></div>
-    <div data-src="{{image.src.small}}" data-min-width="140"></div>
-    <div data-src="{{image.src.xsmall}}"></div>
-    <noscript>
-      <img src="{{image.src.xsmall}}" alt="img03"/>
-    </noscript>
-  </div>
-</li>
+<img ng-src="{{image.src.small}}"
+    alt="Title here"
+    title="Or here(more priority)"
+    data-desc="some description"
+    data-category="image category here"
+    data-fullsrc="{{image.src.medium}}" />

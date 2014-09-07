@@ -4,12 +4,12 @@ class PhotoGallery::BaseUploader < CarrierWave::Uploader::Base
   # google_password 'Woodstok69'
 
   # def url
-    # binding.pry
-    # if Rails.env.production?
-    #   'https://dl.dropboxusercontent.com/1/view/cph48ze9nckmgb4/Приложения/photo_galery_store/uploads/'
-    # else
-    #   'https://dl.dropboxusercontent.com/1/view/cph48ze9nckmgb4/Приложения/photo_galery_store/' + path if path
-    # end
+  #   # binding.pry
+  #   if Rails.env.production?
+  #     'https://dl.dropboxusercontent.com/1/view/cph48ze9nckmgb4/Приложения/photo_galery_store/uploads/'
+  #   else
+  #     'https://dl.dropboxusercontent.com/1/view/cph48ze9nckmgb4/Приложения/photo_galery_store/' + path if path
+  #   end
   # end
 
   def default_url
