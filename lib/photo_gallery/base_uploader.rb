@@ -22,7 +22,7 @@ class PhotoGallery::BaseUploader < CarrierWave::Uploader::Base
       :dropbox
     else
       #:google_drive
-      # :dropbox
+      #:dropbox
       :file
     end
     #:fog

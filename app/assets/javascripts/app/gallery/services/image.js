@@ -9,7 +9,7 @@ module.factory('galleryImage',
 
     GalleryImage.prototype.galereyaFormat = function() {
       return {
-        lowsrc: this.src.small,
+        lowsrc: this.src.middle,
         fullsrc: this.src.large,
         description: this.gallery.name,
         // category: this.gallery.name,
