@@ -10,7 +10,13 @@ $(function() {
     historyapi: true
   };
 
-  Gamma.init(GammaSettings);
+  setTimeout(
+    function() {
+      Gamma.init(GammaSettings)
+
+    }, 1000
+  )
+  // Gamma.init(GammaSettings)
   // Gamma.init( GammaSettings, fncallback );
 
   function fncallback() {

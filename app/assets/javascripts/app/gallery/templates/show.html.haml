@@ -1,0 +1,6 @@
+.gamma-container.gamma-loading#gamma-container
+  %ul.gamma-gallery
+    -# %li{ 'ng-include' => 'app/gallery/templates/_image', 'image' => '{{image}}' }
+    %gallery-image{'ng-repeat' => 'image in images', image: 'image' }
+      -# {{image}}
+  .gamma-overlay
