@@ -10,8 +10,8 @@ module.factory('gallery',
 
     getImages: function(imageIds) {
       images = []
-      for( var i = 1; i <= imageIds.length; i++) {
-        imageData.id = i
+      for( var i = 0; i < imageIds.length; i++) {
+        imageData.id = imageIds[i]
         images.push(galleryImage.get(imageData));
       }
       return images

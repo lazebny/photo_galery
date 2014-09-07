@@ -3,17 +3,22 @@
  <%= I18n.l note.created_at, format: '%d %B, %Y' %>
 </div>
 <div class="line margin-20-0 "></div>
-<div class="blog-content-right-i-opens-photo float-left">
-  <%= link_to note.link do %>
-  <%  image_tag note.image, class: 'blog-content-right-i-opens-photo-i' %>
-  <% end %>
-</div>
-<%= link_to  note.title, note.link, class: 'blog-content-right-i-opens-a' %>
+<div class="blog-content-right-i-opens-wrapper">
+  <div class="blog-content-right-i-opens-photo float-left">
+    <%= link_to note.link, target: '_blank'  do %>
+    <%  image_tag note.image, class: 'blog-content-right-i-opens-photo-i' %>
+    <% end %>
+  </div>
+  <%= link_to  note.title, note.link, class: 'blog-content-right-i-opens-a', target: '_blank' %>
 
-<p>
-  <%= sanitize(truncate_html(note.content, length: 180), tags: %w(br ul li p)) %>
-</p>
+  <p>
+    <%= sanitize(truncate_html(note.content, length: 180), tags: %w(br ul li p)) %>
+  </p>
+  <div class="clear-right"></div>
+</div>
+
 <div class="line margin-20-0 "></div>
 
 <%= link_to 'Все открытия', notes_path, class: 'link-more' %>
 <div class="clear-right"></div>
+ 
