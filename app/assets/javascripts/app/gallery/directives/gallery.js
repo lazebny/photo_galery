@@ -19,7 +19,8 @@ module.directive('gallery',
           function() {
             loader.stop()
             $('#gallery').galereya({
-              spacing: 10,
+              spacing: 5,
+              wave: false,
               load: function(next) {
                 formatedImages = gallery.formatImages(images)
                 // console.log(formatedImages)

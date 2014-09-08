@@ -2,11 +2,13 @@
   <%= render 'galleries/topmenu/ul', galleries: @galleries %>
 </div>
 
-
+<div class="gallery_wrapper ">
 <gallery
   gallery-id="<%= @gallery.id %>"
   image-ids="<%= @image_ids %>" >
 </gallery>
+</div>
+
 <div class="clear"></div>
 
 <div class="galary_pagination  margin-left-20">
