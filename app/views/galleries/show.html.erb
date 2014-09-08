@@ -1,3 +1,4 @@
+<% content_for :main_class, 'gallery-main' %>
 <div class="top_menu_wrapper ">
   <%= render 'galleries/topmenu/ul', galleries: @galleries %>
 </div>
@@ -15,3 +16,5 @@
 <div class="galary_pagination  margin-left-20">
   <% #= paginate @images %>
 </div>
+
+

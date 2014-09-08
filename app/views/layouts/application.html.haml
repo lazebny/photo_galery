@@ -4,7 +4,7 @@
 
 %body
   = render 'layouts/header', top_menu_view: @header_top_menu_view
-  .main
+  .main{ class: yield(:main_class) }
     = yield
 
 = render 'layouts/footer'
