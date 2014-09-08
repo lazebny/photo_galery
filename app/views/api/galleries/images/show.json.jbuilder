@@ -1,4 +1,4 @@
-json.cache! 'test', @image.cache_key do
+json.cache! @image.cache_key do
   json.gallery do
     json.name @image.gallery_name
   end
