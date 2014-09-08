@@ -156,10 +156,10 @@
     // content: "Пожалуйста подождите, чего-то там делается...";
     background: image-url('loader.gif');
     width: 33px;
-top: 50%;
-height: 32px;
-left: 50%;
-position: relative;
+    top: 50%;
+    height: 32px;
+    left: 50%;
+    position: fixed;
   }
 
   .gallery-main{
