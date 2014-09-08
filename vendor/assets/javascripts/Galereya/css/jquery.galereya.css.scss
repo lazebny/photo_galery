@@ -88,7 +88,7 @@
                 display: block;
 
                 border: none;
-                background: url('../img/galereya-arrow_down.png') no-repeat 90% 50%;
+                background: image-url('Galereya/img/galereya-arrow_down.png') no-repeat 90% 50%;
                 background-size: 15px 10px;
             }
 
@@ -97,7 +97,7 @@
         }
 
             .galereya-cats.open .galereya-cats-item:first-child {
-                background: url('../img/galereya-arrow_up.png') no-repeat 90% 45%;
+                background: image-url('Galereya/img/galereya-arrow_up.png') no-repeat 90% 45%;
                 background-size: 15px 10px;
             }
 
@@ -324,16 +324,16 @@
             top: 0;
             left: 0;
 
-            background-image: url('../img/galereya-close.png')
+            background-image: image-url('Galereya/img/galereya-close.png')
         }
         .galereya-slider-play {
             top: 0;
             right: 0;
 
-            background-image: url('../img/galereya-play.png');
+            background-image: image-url('Galereya/img/galereya-play.png');
         }
         .galereya-slider-play.pause {
-            background-image: url('../img/galereya-pause.png');
+            background-image: image-url('Galereya/img/galereya-pause.png');
         }
 
         .galereya-slider-container {
@@ -355,7 +355,7 @@
 
                 text-align: center;
 
-                background: #1a1a1a url('../img/black_lozenge.png');
+                background: #1a1a1a image-url('Galereya/img/black_lozenge.png');
                 background-size: 38px 38px;
 
                 -webkit-box-shadow: 0px 0px 20px 4px #000;
@@ -377,7 +377,7 @@
                     height: 12px;
 
                     opacity: 0.15;
-                    background: url('../img/galereya-slider-loader.gif') no-repeat center;
+                    background: image-url('Galereya/img/galereya-slider-loader.gif') no-repeat center;
                 }
 
                 .galereya-slide-img {
@@ -402,22 +402,22 @@
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi){
     .galereya-slider-close {
-        background-image: url('../img/galereya-close@2x.png');
+        background-image: image-url('Galereya/img/galereya-close@2x.png');
     }
 
     .galereya-slider-play {
-        background-image: url('../img/galereya-play@2x.png');
+        background-image: image-url('Galereya/img/galereya-play@2x.png');
     }
 
     .galereya-slider-play.pause {
-        background-image: url('../img/galereya-pause@2x.png');
+        background-image: image-url('Galereya/img/galereya-pause@2x.png');
     }
 
     .galereya-slider-nav.left { background-image: url(../img/galereya-arrow_prev@2x.png); }
     .galereya-slider-nav.right { background-image: url(../img/galereya-arrow_next@2x.png); }
 
     .galereya-slider-slide {
-        background-image: url('../img/black_lozenge_@2X.png');
+        background-image: image-url('Galereya/img/black_lozenge_@2X.png');
     }
 }
 
