@@ -537,8 +537,11 @@
 
 //Responsiv
 
-// @media (min-width:760px) {
-//   .blog-content-left{
-//     float: none;
-//   }
-// }
+@media (max-width:760px) {
+  .blog-content-left{
+    float: none;
+  }
+  .blog-content-right{
+    margin-left: 0;
+  }
+}

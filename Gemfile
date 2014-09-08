@@ -2,29 +2,31 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'rails', '4.0.9'
-gem 'sqlite3', group: :development
-gem 'pg', group: :production
-gem 'rails_12factor', group: :production
+group :development do
+  gem 'sqlite3'
+  # gem 'thin'
+end
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+  gem 'unicorn'
+end
 gem 'sass-rails', '~> 4.0.2'
 gem 'uglifier', '>= 1.3.0'
-gem 'unicorn', group: :productino
 # gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'underscore-rails'
 gem 'angularjs-rails'
 gem 'angular-rails-templates'
-# gem 'simple_form_angular'
-
 # gem 'turbolinks'
 # gem 'therubyracer'
 gem 'jbuilder', '~> 1.2'
 gem 'carrierwave'
-gem 'carrierwave-dropbox' #, github: 'john/carrierwave-dropbox'
-gem 'carrierwave-google_drive'
+gem 'carrierwave-dropbox'
+# gem 'carrierwave-google_drive'
 gem 'mini_magick'
 gem 'kaminari'
 gem 'truncate_html'
-
 gem 'rails_admin'
 gem 'rails-i18n', '~> 4.0.0'
 gem 'russian', '~> 0.6.0'
@@ -50,8 +52,6 @@ end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
-# Use unicorn as the app server
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
