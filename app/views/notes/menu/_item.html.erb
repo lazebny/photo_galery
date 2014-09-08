@@ -11,9 +11,9 @@
   </div>
   <%= link_to  note.title, note.link, class: 'blog-content-right-i-opens-a', target: '_blank' %>
 
-  <p>
+  <div>
     <%= sanitize(truncate_html(note.content, length: 180), tags: %w(br ul li p)) %>
-  </p>
+  </div>
   <div class="clear-right"></div>
 </div>
 
